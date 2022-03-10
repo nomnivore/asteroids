@@ -32,7 +32,7 @@ class SpaceRock(Sprite, AstObject):
         self.settings = game.settings
         self.size = rock_size
 
-        image = pg.image.load(f"media/ast-rock-{self.size}.png")
+        image = pg.image.load(f"data/ast-rock-{self.size}.png")
         self.image = pg.transform.scale(image,
                                         self.settings.rocks_size[self.size-1])
 

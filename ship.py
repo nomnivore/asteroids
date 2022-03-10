@@ -23,9 +23,9 @@ class Ship(Sprite, AstObject):
         self.screen = game.screen
         self.screen_rect = self.screen.get_rect()
 
-        image = pg.image.load("media/ast-ship.png").convert_alpha()
+        image = pg.image.load("data/ast-ship.png").convert_alpha()
         self.image = pg.transform.scale(image, self.settings.ship_size)
-        image_move = pg.image.load("media/ast-ship-moving.png").convert_alpha()
+        image_move = pg.image.load("data/ast-ship-moving.png").convert_alpha()
         self.image_move = pg.transform.scale(
             image_move, self.settings.ship_size)
         self.original_image = self.image.copy()
